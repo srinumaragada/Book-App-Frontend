@@ -7,7 +7,7 @@ import { FaRegHeart } from "react-icons/fa6";
 import { FiShoppingCart } from "react-icons/fi";
 import { useSelector } from "react-redux";
 import { useAuth } from "../../context/AuthContext";
-
+import avatar from "../../assets/avatar.png"
 const navigation = [
   {
     name: "Dashboard",
@@ -61,7 +61,7 @@ function Navbar() {
             <>
               <button onClick={() => setIsOpen(!isOpen)}>
                 <img
-                  src="/src/assets/avatar.png"
+                  src={avatar}
                   alt=""
                   className={`size-7 rounded-full ${
                     currentUser ? "ring-2 ring-blue-500" : ""

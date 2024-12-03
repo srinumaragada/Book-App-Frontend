@@ -1,10 +1,10 @@
 import React from "react"
-
+import banner from "../../assets/banner.png"
 function Banner() {
   return (
     <div className='flex flex-col md:flex-row-reverse py-16 justify-between items-center gap-12'>
          <div className='md:w-1/2 w-full flex items-center md:justify-end'>
-            <img src="/src/assets/banner.png" alt="dgd" />
+            <img src={banner} alt="dgd" />
         </div>
         
         <div className='md:w-1/2 w-full'>
